@@ -27,6 +27,10 @@
     }
   });
 
+  $(".spoiler-trigger").click(function() {
+  $(this).parent().next().collapse('toggle');
+});
+
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
     $("#sidebar-wrapper").removeClass("active");
